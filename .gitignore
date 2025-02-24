@@ -1,1 +1,5 @@
 src/secret.py
+
+__pychache__
+
+.venv
