@@ -4,7 +4,7 @@
 This project analyzes listener sentiment toward Grammy-nominated artists and compares public opinion with actual Grammy outcomes. It scrapes Reddit discussions, filters opinionated and relevant comments using AI/ML, and performs sentiment analysis to determine audience reactions.
 
 ## Features
-- **Reddit Web Scraping**: Extracts Grammy-related comments from Reddit.
+- **Reddit Web Scraping**: Extracts Grammy-related comments from Reddit using Reddit's API PRAW.
 - **Sentiment Analysis**: Uses VADER and BERT to classify opinionated comments.
 - **Relevance Filtering**: Ensures comments mention both Grammy-related terms and artist names.
 - **Data Processing & Storage**: Stores filtered comments in structured JSON files for analysis.
