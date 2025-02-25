@@ -5,13 +5,13 @@ This project analyzes listener sentiment toward Grammy-nominated artists and com
 
 ## Features
 - **Reddit Web Scraping**: Extracts Grammy-related comments from Reddit.
-- **Sentiment Analysis**: Uses VADER (or optionally BERT) to classify opinionated comments.
+- **Sentiment Analysis**: Uses VADER and BERT to classify opinionated comments.
 - **Relevance Filtering**: Ensures comments mention both Grammy-related terms and artist names.
-- **Data Processing & Storage**: Stores filtered comments in structured JSON files.
+- **Data Processing & Storage**: Stores filtered comments in structured JSON files for analysis.
 
 ## Installation
 ### Prerequisites
-Ensure you have **Python 3.10+** installed. Use a virtual environment to manage dependencies.
+Ensure you have **Python 3.12** installed.
 
 ```bash
 python -m venv venv
