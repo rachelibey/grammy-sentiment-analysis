@@ -86,9 +86,8 @@ def is_relevant_comment(comment_text):
 
 
 # Check if the comment contains artist references
-def contains_grammy_and_artist(comment_text):
+def contains_artist(comment_text):
     comment_lower = comment_text.lower()
-    #has_grammy = any(keyword.lower() in comment_lower for keyword in grammy_keywords)
     has_artist = any(artist.lower() in comment_lower for artist in artist_keywords)
     return has_artist
 
@@ -106,7 +105,7 @@ def filter_comments(input_file, output_file):
 
         opinion_check = is_opinion_comment(comment)
         relevance_check = is_relevant_comment(comment)
-        keyword_check = contains_grammy_and_artist(comment)
+        keyword_check = contains_artist(comment)
 
         print(f"  Sentiment Pass: {opinion_check}")
         print(f"  Relevance Pass: {relevance_check}")
